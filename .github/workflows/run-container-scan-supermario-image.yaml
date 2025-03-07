@@ -25,7 +25,7 @@ jobs:
           docker pull docker.io/dbamex/supermariogitopsproject:${{ env.VERSION }}
           docker save -o supermariolatestdockerimage.tar docker.io/dbamex/supermariogitopsproject:${{ env.VERSION }}
      
-      - name: "Check content
+      - name: "Check content"
         run: "ls -ltr /github/workspace/"
 
       
